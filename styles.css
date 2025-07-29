@@ -1,50 +1,61 @@
+:root {
+  --primary: #0fae96;
+  --bg-dark: #11011e;
+  --font-main: "Raleway", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
+  --font-light-title: #ecf1f0;
+  --font-light-sub: #b6b6b6;
+  --header-padding: 3rem 9rem;
+  --section-padding: 0 9rem;
+  --radius: 0.625rem;
+}
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-size: 62.5%;
-  background: #11011e;
-  color: white;
+  background: var(--bg-dark);
+  color: #fff;
   width: 100dvw;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-main);
 }
 
 .header {
   display: flex;
-  padding: 3rem 9rem;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: var(--header-padding);
+}
+
+.logo-crypto,
+.logo-crypto span {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .logo-crypto {
   color: #fff;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 
 .logo-crypto span {
-  color: #0fae96;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  color: var(--primary);
 }
 
 .navigation ul {
+  display: flex;
+  gap: 2rem;
   list-style: none;
-  color: #ecf1f0;
+  color: var(--font-light-title);
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-
-  display: flex;
-  gap: 2rem;
 }
 
 .navigation a {
@@ -53,13 +64,14 @@ body {
 }
 
 .navigation .active {
-  color: #0fae96;
+  color: var(--primary);
 }
 
 .lang-and-cta {
   display: flex;
   gap: 1rem;
 }
+
 .lang {
   display: flex;
   align-items: center;
@@ -67,28 +79,28 @@ body {
 }
 
 .lang span {
-  text-align: center;
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-align: center;
 }
+
 .lang-dropdown {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .header-cta-btn {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 6.5rem;
   padding: 1rem 2.4rem;
-  justify-content: center;
-  align-items: center;
   border: none;
-  flex-shrink: 0;
-  border-radius: 0.625rem;
-  background: #0fae96;
+  border-radius: var(--radius);
+  background: var(--primary);
   color: #fff;
   text-align: center;
   font-feature-settings:
@@ -98,19 +110,18 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 1.5rem;
+  flex-shrink: 0;
 }
 
 .hero-title {
   display: flex;
-  width: 60rem;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 4rem;
-
+  width: 60rem;
   margin: 8.8rem auto;
   position: relative;
-  /* Remove z-index here, not needed for stacking context */
 }
 
 .hero-title::before,
@@ -119,11 +130,11 @@ body {
   position: absolute;
   width: 675px;
   height: 314px;
-  flex-shrink: 0;
   border-radius: 675px;
   filter: blur(300px);
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
+  flex-shrink: 0;
 }
 
 .hero-title::before {
@@ -144,7 +155,7 @@ body {
 }
 
 .hero-title__heading {
-  color: #ecf1f0;
+  color: var(--font-light-title);
   text-align: center;
   font-feature-settings:
     "salt" on,
@@ -156,12 +167,12 @@ body {
 }
 
 .hero-title__subtitle {
-  color: #b6b6b6;
+  color: var(--font-light-sub);
   text-align: center;
   font-feature-settings:
     "salt" on,
     "liga" off;
-  font-family: Roboto, sans-serif;
+  font-family: var(--font-secondary);
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
@@ -171,46 +182,173 @@ body {
 
 .hero-cta-btn {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
   width: 11.875rem;
   padding: 1rem 1.5rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  border-radius: 0.625rem;
-  background: #0fae96;
   border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
   color: #fff;
   text-align: center;
   font-feature-settings:
     "salt" on,
     "liga" off;
-
-  font-family: Raleway;
+  font-family: var(--font-main);
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 1.5rem; /* 150% */
+  line-height: 1.5rem;
 }
 
 .market-trends-section {
   display: flex;
-  padding: 0 9rem;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--section-padding);
   flex-shrink: 0;
 }
 
 .market-trends-header {
-  color: var(--Font-Color-Light-Title, #ecf1f0);
+  color: var(--font-light-title);
   font-feature-settings:
     "salt" on,
     "liga" off;
-
-  /* Heading/Heading 5 */
-  font-family: Raleway;
+  font-family: var(--font-main);
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
+}
+
+.market-trends-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.coin-trend-item {
+  display: flex;
+  padding: 18px 20px 18px 19px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  flex: 1 0 0;
+  align-self: stretch;
+
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(
+    --High-Fidelity-Color-Card-Background,
+    rgba(255, 255, 255, 0.02)
+  );
+}
+
+.coin-info {
+  display: flex;
+  width: 254px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coin-data {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.coin-trend-img {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+.coin-abbreviation {
+  color: var(--Font-Color-Light-Title, #ecf1f0);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.coin-name {
+  display: flex;
+  padding: 4px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #c6c6c6;
+
+  color: #1d1429;
+
+  text-align: center;
+  font-family: Raleway;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.market-trend-see-more {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.devider {
+  width: 258px;
+  height: 1px;
+  opacity: 0.05;
+  background: #ecf1f0;
+}
+
+.coin-value {
+  display: flex;
+  width: 252px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.value-perc {
+  display: flex;
+  width: 140px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 9px;
+  flex-shrink: 0;
+}
+
+.trend-coin-price {
+  align-self: stretch;
+  color: var(--Font-Color-Light-Title, #ecf1f0);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.trend-coin-perc {
+  color: var(--Font-Color-Light-Subtitle, #b6b6b6);
+  font-feature-settings:
+    "salt" on,
+    "liga" off;
+  /* Subtitle/Subtitle 1 - Medium */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 28.8px */
+}
+
+.trend-coin-chart {
+  width: 100px;
+  height: 53.271px;
+  flex-shrink: 0;
+  background: url(/btc-chart.png) 99% / cover no-repeat;
 }
