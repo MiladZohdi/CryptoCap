@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  background: #11011e;
+  color: white;
+  width: 100dvw;
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  display: flex;
+  padding: 3rem 9rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-crypto {
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.logo-crypto span {
+  color: #0fae96;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.navigation ul {
+  list-style: none;
+  color: #ecf1f0;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation .active {
+  color: #0fae96;
+}
+
+.lang-and-cta {
+  display: flex;
+  gap: 1rem;
+}
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.lang span {
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.lang-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-cta-btn {
+  display: flex;
+  width: 6.5rem;
+  padding: 1rem 2.4rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: #0fae96;
+  color: #fff;
+  text-align: center;
+  font-feature-settings:
+    "salt" on,
+    "liga" off;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.hero-title {
+  display: flex;
+  width: 60rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  margin: 8.8rem auto;
+  position: relative;
+  /* Remove z-index here, not needed for stacking context */
+}
+
+.hero-title::before,
+.hero-title::after {
+  content: "";
+  position: absolute;
+  width: 675px;
+  height: 314px;
+  flex-shrink: 0;
+  border-radius: 675px;
+  filter: blur(300px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-title::before {
+  top: 0;
+  left: 0;
+  background: #7000ff;
+}
+
+.hero-title::after {
+  top: 0;
+  left: 40%;
+  background: #ff00c7;
+}
+
+.hero-title > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title__heading {
+  color: #ecf1f0;
+  text-align: center;
+  font-feature-settings:
+    "salt" on,
+    "liga" off;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.hero-title__subtitle {
+  color: #b6b6b6;
+  text-align: center;
+  font-feature-settings:
+    "salt" on,
+    "liga" off;
+  font-family: Roboto, sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 2rem;
+}
+
+.hero-cta-btn {
+  display: flex;
+  width: 11.875rem;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+  background: #0fae96;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-feature-settings:
+    "salt" on,
+    "liga" off;
+
+  font-family: Raleway;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem; /* 150% */
+}
+
+.market-trends-section {
+  display: flex;
+  padding: 0 9rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.market-trends-header {
+  color: var(--Font-Color-Light-Title, #ecf1f0);
+  font-feature-settings:
+    "salt" on,
+    "liga" off;
+
+  /* Heading/Heading 5 */
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+}
