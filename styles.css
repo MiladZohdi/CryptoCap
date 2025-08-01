@@ -510,9 +510,10 @@ body {
   position: absolute;
   fill: #7000ff;
   filter: blur(200px);
-  left: 0;
-  top: -100%;
-  opacity: 0.5;
+  left: -10%;
+  top: -130%;
+  opacity: 0.6;
+  z-index: -1;
 }
 
 .learn-section {
@@ -706,4 +707,132 @@ body {
   left: 10px;
   transform: translateY(-50%);
   pointer-events: none;
+}
+
+/* .market-update-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+}
+.market-update-table-row {
+  display: flex;
+  height: 62.375px;
+  padding: 16px 74px 16px 30px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+} */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  color: var(--Font-Color-Light-Subtitle, #b6b6b6);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+td {
+  color: var(--Font-Color-Light-Subtitle, #b6b6b6);
+  font-feature-settings:
+    "salt" on,
+    "liga" off;
+
+  /* Caption/Caption 1 - Reguler */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+tr {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  background: var(
+    --High-Fidelity-Color-Card-Background,
+    rgba(255, 255, 255, 0.02)
+  );
+}
+
+.table-data-img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.table-data-divider {
+  width: 1px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #403a3a;
+}
+
+.table-data-name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.table-chart {
+  width: 76px;
+  height: 40.486px;
+}
+
+.table-trade-button {
+  display: flex;
+  padding: 4px 24px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--High-Fidelity-Color-Primary-Color, #0fae96);
+  border: none;
+
+  color: var(--Font-Color-Pure-White, #fff);
+  text-align: center;
+  font-feature-settings:
+    "salt" on,
+    "liga" off;
+  /* Label/Label 1 - Semibold */
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.market-update-see-all {
+  display: flex;
+  padding: 10px 10px 10px 0;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  color: var(--High-Fidelity-Color-Primary-Color, #0fae96);
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
