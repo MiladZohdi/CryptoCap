@@ -16,8 +16,11 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-size: 62.5%;
+}
+
+body {
   background: var(--bg-dark);
   color: #fff;
   width: 100dvw;
@@ -30,11 +33,12 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: var(--header-padding);
+  margin-bottom: 8.8rem;
 }
 
 .logo-crypto,
 .logo-crypto span {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -50,10 +54,10 @@ body {
 
 .navigation ul {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   list-style: none;
   color: var(--font-light-title);
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -76,11 +80,11 @@ body {
 .lang {
   display: flex;
   align-items: center;
-  gap: 0.2rem;
+  gap: 1rem;
 }
 
 .lang span {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -97,8 +101,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 6.5rem;
-  padding: 1rem 2.4rem;
+  padding: 1.3rem 2.4rem;
   border: none;
   border-radius: var(--radius);
   background: var(--primary);
@@ -107,7 +110,7 @@ body {
   font-feature-settings:
     "salt" on,
     "liga" off;
-  font-size: 0.875rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 600;
   line-height: 1.5rem;
@@ -120,8 +123,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  width: 60rem;
-  margin: 8.8rem auto;
+  width: 78rem;
+  margin: 13.6rem auto;
   position: relative;
 }
 
@@ -136,6 +139,7 @@ body {
   pointer-events: none;
   z-index: -1;
   flex-shrink: 0;
+  opacity: 0.6;
 }
 
 .hero-title::before {
@@ -161,7 +165,7 @@ body {
   font-feature-settings:
     "salt" on,
     "liga" off;
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: 4rem;
@@ -174,7 +178,7 @@ body {
     "salt" on,
     "liga" off;
   font-family: var(--font-secondary);
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
@@ -185,9 +189,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.625rem;
-  width: 11.875rem;
-  padding: 1rem 1.5rem;
+  padding: 1.6rem 2.4rem;
   border: none;
   border-radius: var(--radius);
   background: var(--primary);
@@ -197,7 +199,7 @@ body {
     "salt" on,
     "liga" off;
   font-family: var(--font-main);
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 600;
   line-height: 1.5rem;
@@ -1324,7 +1326,6 @@ tr {
 
 .links-col {
   display: flex;
-  width: 137px;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
