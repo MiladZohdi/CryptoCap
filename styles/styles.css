@@ -228,10 +228,13 @@ body {
 }
 
 .market-trends-content {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
+  align-items: center;
   gap: 24px;
   align-self: stretch;
+  justify-items: center;
+  justify-content: center;
 }
 
 .coin-trend-item {
@@ -1088,7 +1091,7 @@ tr {
   border-radius: 18px;
   background:
     linear-gradient(0deg, rgba(38, 1, 68, 0.75) 0%, rgba(38, 1, 68, 0.75) 100%),
-    url(./img/articles/vertical.jpg) lightgray 50% / cover no-repeat;
+    url(../img/articles/vertical.jpg) lightgray 50% / cover no-repeat;
 }
 .vertical-article-content {
   display: flex;
